@@ -1,0 +1,40 @@
+<div class="product-options">
+    <div ng-include="'product/product-tabs.html'"></div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="input-group search">
+                <span class="input-group-addon">
+                    <i class="fa fa-search"></i>
+                </span>
+                <input
+                    ng-model="ctrl.search"
+                    class="form-control"
+                    type="text"/>
+            </div>
+        </div>
+    </div>
+
+    <div ng-repeat="block in ctrl.options">
+        <div class="alert alert-info">
+            {{ block.title }}
+        </div>
+        <div class="toggle-all">
+            <a href="" ng-click="ctrl.toggleAll(block, true)">
+                Select all
+            </a>
+            |
+            <a href="" ng-click="ctrl.toggleAll(block, false)">
+                Deselect all
+            </a>
+        </div>
+        <div class="options">
+            <label ng-repeat="option in block.options">
+                <input
+                    ng-model="option.selected"
+                    type="checkbox"/>
+                <span ng-bind-html="option.title | highlight:ctrl.search"></span>
+            </label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>App</title>
+        <base href="/"/>
+        <!-- build:css(.tmp) styles/main.css -->
+        <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+        <!-- endbuild -->
+    </head>
+    <body ng-app="app">
+
+        <div id="page">
+            <div ng-include="'header/header.html'"></div>
+
+            <div class="container" id="content">
+                <div ui-view></div>
+            </div>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- angularJS + libraries -->
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <!-- angular strap -->
+        <script src="../bower_components/angular-strap/dist/modules/compiler.js"></script>
+        <script src="../bower_components/angular-strap/dist/modules/dimensions.js"></script>
+        <script src="../bower_components/angular-strap/dist/modules/tooltip.js"></script>
+        <script src="../bower_components/angular-strap/dist/modules/date-parser.js"></script>
+        <script src="../bower_components/angular-strap/dist/modules/date-formatter.js"></script>
+        <script src="../bower_components/angular-strap/dist/modules/datepicker.js"></script>
+        <script src="../bower_components/angular-strap/dist/modules/datepicker.tpl.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/script.js -->
+        <!-- configuration -->
+        <script src="_configuration/configs.js"></script>
+        <script src="_configuration/app.js"></script>
+        <!-- product -->
+        <script src="product/product-options-controller.js"></script>
+        <script src="product/product-options-highlight.js"></script>
+        <script src="product/product-settings-controller.js"></script>
+        <script src="product/product-empty-controller.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

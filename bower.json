@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "app",
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-strap": "~2.3.6",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.4.0"
+  },
+  "devDependencies": {}
+}

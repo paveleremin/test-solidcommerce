@@ -1,0 +1,9 @@
+Thumbs.db
+.DC_Store
+/.idea
+/.tmp
+/.grunt
+/node_modules
+/npm-debug.log
+/bower_components
+/dist

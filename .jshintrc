@@ -1,0 +1,35 @@
+{
+    //custom
+    "boss": true, // Allows assignments in ifs - if (a = 10) {}
+    "eqnull": true, // Allows == null check for null or undefined
+    "sub": true, // This option suppresses warnings about using [] notation when it can be expressed in dot notation: person['name'] vs. person.name.
+    "maxdepth": 4, // Max nesting of methods 3 layers deep
+    "expr": true, // Allowed for chais expect(false).to.be.false; assertion style.
+    "devel": true, // Allows console.log's etc
+    "laxbreak": true, // exp
+    // ? ab
+    // : cd
+    //default
+    "node": true,
+    "browser": true, // Sets up globals for browser like window and document
+    "esnext": true,
+    "bitwise": true,
+    "camelcase": false,
+    "curly": false, //Accept: if (expression) return
+    "eqeqeq": false, // No more == for you, === only
+    "immed": true, // prohibits the use of immediate function invocations without wrapping them in parentheses
+    "indent": 4,
+    "latedef": true, // no setting variables before they are defined
+    "newcap": true, // Always call constructors with a Cap
+    "noarg": true, // prohibits arguments.caller and arguments.callee
+    "quotmark": false,
+    "regexp": true,
+    "undef": true, // prohibits the use of explicitly undeclared variables
+    "unused": true, // Warns on unused variables
+    "strict": true,
+    "trailing": true, // Prohibits trailing whitespace
+    "smarttabs": true,
+    "globals": {
+        "angular": true
+    }
+}
