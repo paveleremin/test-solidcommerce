@@ -1,0 +1,25 @@
+[{
+    "title": "Basic listing information",
+    "options": [{
+        "id": 1,
+        "title": "Ship from country"
+    }, {
+        "id": 123,
+        "title": "Test 1"
+    }, {
+        "id": 456,
+        "title": "Test 12"
+    }]
+}, {
+    "title": "Shipping options",
+    "options": [{
+        "id": 555,
+        "title": "Shipping rate"
+    }, {
+        "id": 6,
+        "title": "Test 123"
+    }, {
+        "id": 887,
+        "title": "Test 1234"
+    }]
+}]
